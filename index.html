@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+
+    <script>
+        (function () {
+            const lang = navigator.language || navigator.userLanguage;
+
+            if (lang && lang.toLowerCase().startsWith('zh')) {
+                window.location.replace('/zh/home.html');
+            } else {
+                window.location.replace('/en/home.html');
+            }
+        })();
+    </script>
+
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/en/home.html" />
+    </noscript>
+</head>
+
+<body>
+</body>
+
+</html>
